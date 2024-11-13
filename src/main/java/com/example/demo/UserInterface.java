@@ -1,7 +1,8 @@
 package com.example.demo;
 
-import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserInterface extends JpaRepository<User, String> {
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface UserInterface extends MongoRepository<User, String> {
 	public User findByEmail(String email);
 }

@@ -1,16 +1,17 @@
 package com.example.demo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
-@Entity
-@Table(name = "s13user")
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+
+@Document
 public class User {
 	
 	String name;
+	
+
 	int role;
-	@Id
 	String email;
 	String password;
 	
